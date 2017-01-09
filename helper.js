@@ -1,0 +1,1 @@
+window.requestAnimationFramePromise=()=>new Promise(requestAnimationFrame),window.transitionEndPromise=a=>new Promise(b=>{a.addEventListener('transitionend',b,{once:!0})}),window.lerp=(a,b,c,d,e={})=>{const f=b-a;return g=>{g=e.absolute?Math.abs(g):g;let h;return h=e.noClamp?(g-a)/f:Math.max(Math.min((g-a)/f,1),0),h*(d-c)+c}};
